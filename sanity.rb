@@ -7,7 +7,6 @@ class Sanity < Formula
   sha256 "2b2a746affd09cb0dabb5f43580c7c266a0c8c52ff5ee185d2dfc9b35542332a"
 
   def install
-    libexec.install Dir["*"]
-    bin.install_symlink libexec/"bin/sanity"
+    bin.install Dir["sanity"]
   end
 end
